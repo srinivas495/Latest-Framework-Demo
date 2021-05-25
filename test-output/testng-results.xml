@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4802" started-at="2021-05-23T15:18:44Z" finished-at="2021-05-23T15:18:49Z">
+  <suite name="Suite" duration-ms="12791" started-at="2021-05-24T17:12:04Z" finished-at="2021-05-24T17:12:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4802" started-at="2021-05-23T15:18:44Z" finished-at="2021-05-23T15:18:49Z">
-      <class name="com.slt.tests.HomepageTests">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.slt.tests.HomepageTests@735b5592]" name="setUP" is-config="true" duration-ms="3064" started-at="2021-05-23T20:48:44Z" finished-at="2021-05-23T20:48:47Z">
+    <test name="Test" duration-ms="12791" started-at="2021-05-24T17:12:04Z" finished-at="2021-05-24T17:12:16Z">
+      <class name="com.slt.tests.OrangeHRMTests">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.slt.tests.OrangeHRMTests@1753acfe]" name="setUP" is-config="true" duration-ms="5843" started-at="2021-05-24T22:42:04Z" finished-at="2021-05-24T22:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.slt.tests.HomepageTests@735b5592]" name="test3" duration-ms="1061" started-at="2021-05-23T20:48:47Z" finished-at="2021-05-23T20:48:48Z">
+        <test-method status="PASS" signature="loginLogoutTests()[pri:0, instance:com.slt.tests.OrangeHRMTests@1753acfe]" name="loginLogoutTests" duration-ms="5708" started-at="2021-05-24T22:42:09Z" finished-at="2021-05-24T22:42:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.slt.tests.HomepageTests@735b5592]" name="tearDown" is-config="true" duration-ms="664" started-at="2021-05-23T20:48:48Z" finished-at="2021-05-23T20:48:49Z">
+        </test-method> <!-- loginLogoutTests -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.slt.tests.OrangeHRMTests@1753acfe]" name="tearDown" is-config="true" duration-ms="1216" started-at="2021-05-24T22:42:15Z" finished-at="2021-05-24T22:42:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.slt.tests.HomepageTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.slt.tests.OrangeHRMTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -6,4 +6,15 @@
       <class name="com.slt.tests.HomepageTests"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.slt.tests.HomepageTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.slt.tests.HomepageTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

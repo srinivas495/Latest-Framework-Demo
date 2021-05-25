@@ -1,11 +1,5 @@
 package com.slt.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.testng.annotations.Test;
-
-import com.slt.drivers.DriverManager;
-
 public final class LoginpageTests extends BaseTest {
 
 	private LoginpageTests(){

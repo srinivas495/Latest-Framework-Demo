@@ -24,7 +24,7 @@ public final class PropertyUtils {
 			property.load(file);
 
 			for (Map.Entry<Object, Object> entry : property.entrySet()) {
-				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())); //remove the trailing and leading spaces
+				CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim()); //remove the trailing and leading spaces
 			}
 		}
 
