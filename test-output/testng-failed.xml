@@ -6,4 +6,15 @@
       <class name="com.slt.tests.OrangeHRMTests"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.slt.tests.OrangeHRMTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="loginLogoutTests" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.slt.tests.OrangeHRMTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

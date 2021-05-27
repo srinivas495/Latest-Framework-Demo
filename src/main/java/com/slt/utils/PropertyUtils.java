@@ -9,6 +9,7 @@ import java.util.Objects;
 import java.util.Properties;
 
 import com.slt.constants.FrameworkConstants;
+import com.slt.enums.ConfigProperties;
 
 public final class PropertyUtils {
 
@@ -37,10 +38,10 @@ public final class PropertyUtils {
 		}
 	}
 
-	public static String get(String key) throws Exception  {
-		if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key))) {
+	public static String get(ConfigProperties key) throws Exception  {
+		if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
 			throw new Exception("Property name " + key + " is not found. Please check config.properties");
 		}
-		return CONFIGMAP.get(key);
+		return CONFIGMAP.get(key.name().toLowerCase());
 	}
 }

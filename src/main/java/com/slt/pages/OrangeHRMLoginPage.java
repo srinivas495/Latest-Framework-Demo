@@ -5,8 +5,9 @@ import org.testng.Assert;
 import org.testng.asserts.Assertion;
 
 import com.slt.drivers.DriverManager;
+import com.slt.enums.WaitStrategy;
 
-public final class OrangeHRMLoginPage {
+public final class OrangeHRMLoginPage extends BasePage {
 	
 	
 	private final By textboxUsername = By.id("txtUsername");
@@ -15,23 +16,25 @@ public final class OrangeHRMLoginPage {
 	
 	
 	public OrangeHRMLoginPage enterUserName(String username) {
-		DriverManager.getDriver().findElement(textboxUsername).sendKeys(username);
+		sendKeys(textboxUsername, username , WaitStrategy.PRESENCE);
 		return this;
 	}
 	
 	public OrangeHRMLoginPage enterPassword(String password) {
-		DriverManager.getDriver().findElement(textboxPassword).sendKeys(password);
+		sendKeys(textboxPassword, password, WaitStrategy.PRESENCE);
 		return this;
 	}
 	
 	public OrangeHRMHomePage clickLogin() {
-		DriverManager.getDriver().findElement(buttonLogin).click();
+		click(buttonLogin, WaitStrategy.CLICKABLE);
 		return new OrangeHRMHomePage();
 	}
 	
 	public String getTitle() {
-		return DriverManager.getDriver().getTitle();
+		return getPageTitle();
 		
 	}
+	
+	
 	
 }
