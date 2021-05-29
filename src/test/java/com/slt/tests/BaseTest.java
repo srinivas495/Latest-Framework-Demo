@@ -10,10 +10,10 @@ public class BaseTest {
 	protected BaseTest() {
 
 	}
-
+	
+		
 	@BeforeMethod
 	protected void setUP() throws Exception {
-
 		Driver.intiDriver();
 	}
 

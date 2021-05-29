@@ -4,8 +4,8 @@ import org.assertj.core.api.Assertions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.slt.pages.OrangeHRMHomePage;
 import com.slt.pages.OrangeHRMLoginPage;
+import com.slt.reports.ExtentReport;
 
 public final class OrangeHRMTests extends BaseTest {
 	
@@ -13,17 +13,28 @@ public final class OrangeHRMTests extends BaseTest {
 
 	}
 	
-	@Test(dataProvider = "LoginTestDataProvider")
+	@Test
 	public void loginLogoutTests(String userName, String password ) {
 		
+				
 		String title = new OrangeHRMLoginPage().enterUserName(userName).enterPassword(password).clickLogin()
 				.clickWelcome().clickLogout()
 				.getTitle();
 		
 		Assertions.assertThat(title)
 				.isEqualTo("OrangeHRM");
-		
-		
+	}
+	
+		public void newTest(String userName, String password ) {
+			
+			
+			String title = new OrangeHRMLoginPage().enterUserName(userName).enterPassword(password).clickLogin()
+					.clickWelcome().clickLogout()
+					.getTitle();
+			
+			Assertions.assertThat(title)
+					.isEqualTo("OrangeHRM");
+				
 	}
 	
 	@DataProvider(name = "LoginTestDataProvider" , parallel = true)
@@ -31,7 +42,7 @@ public final class OrangeHRMTests extends BaseTest {
 		
 		return new Object[][] {
 			{"Admin", "admin123"},
-			{"Admin", "admin123"} 
+			{"Admin", "admin12"} 
 		};
 		
 	}

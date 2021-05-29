@@ -1,10 +1,7 @@
 package com.slt.pages;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.asserts.Assertion;
 
-import com.slt.drivers.DriverManager;
 import com.slt.enums.WaitStrategy;
 
 public final class OrangeHRMLoginPage extends BasePage {
@@ -16,17 +13,17 @@ public final class OrangeHRMLoginPage extends BasePage {
 	
 	
 	public OrangeHRMLoginPage enterUserName(String username) {
-		sendKeys(textboxUsername, username , WaitStrategy.PRESENCE);
+		sendKeys(textboxUsername, username , WaitStrategy.PRESENCE, "username");
 		return this;
 	}
 	
 	public OrangeHRMLoginPage enterPassword(String password) {
-		sendKeys(textboxPassword, password, WaitStrategy.PRESENCE);
+		sendKeys(textboxPassword, password, WaitStrategy.PRESENCE, "password");
 		return this;
 	}
 	
 	public OrangeHRMHomePage clickLogin() {
-		click(buttonLogin, WaitStrategy.CLICKABLE);
+		click(buttonLogin, WaitStrategy.CLICKABLE, "Login button");
 		return new OrangeHRMHomePage();
 	}
 	

@@ -1,10 +1,7 @@
 package com.slt.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.slt.drivers.DriverManager;
 import com.slt.enums.WaitStrategy;
 
 public final class OrangeHRMHomePage extends BasePage{
@@ -13,13 +10,13 @@ public final class OrangeHRMHomePage extends BasePage{
 	private final By linkLogout = By.xpath("//a[text()='Logout']");
 
 	public OrangeHRMHomePage clickWelcome() {
-		click(linkWelcome, WaitStrategy.PRESENCE);
+		click(linkWelcome, WaitStrategy.PRESENCE, "Welcome link" );
 		return this;
 	}
 
 	public OrangeHRMLoginPage clickLogout() {
 		
-		click(linkLogout, WaitStrategy.CLICKABLE);
+		click(linkLogout, WaitStrategy.CLICKABLE, "Logot button");
 		return new OrangeHRMLoginPage();
 	}
 	
