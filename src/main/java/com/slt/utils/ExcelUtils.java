@@ -16,6 +16,7 @@ import com.slt.constants.FrameworkConstants;
 
 public final class ExcelUtils {
 
+/*	
 	private ExcelUtils() {}
 
 	public static List<Map<String,String>> getTestDetails(){
@@ -47,7 +48,7 @@ public final class ExcelUtils {
 					map.put(key, value);
 				}
 
-				list.add(map);
+			//	list.add(map);
 			}
 
 		} catch (FileNotFoundException e1) {
@@ -72,4 +73,6 @@ public final class ExcelUtils {
 		return list;
 
 	}
+	
+*/	
 }

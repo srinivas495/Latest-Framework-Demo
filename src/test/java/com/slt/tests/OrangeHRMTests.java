@@ -5,7 +5,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.slt.pages.OrangeHRMLoginPage;
-import com.slt.reports.ExtentReport;
 
 public final class OrangeHRMTests extends BaseTest {
 	
@@ -13,7 +12,7 @@ public final class OrangeHRMTests extends BaseTest {
 
 	}
 	
-	@Test
+	@Test(dataProvider = "LoginTestDataProvider")
 	public void loginLogoutTests(String userName, String password ) {
 		
 				
@@ -42,7 +41,7 @@ public final class OrangeHRMTests extends BaseTest {
 		
 		return new Object[][] {
 			{"Admin", "admin123"},
-			{"Admin", "admin12"} 
+			{"Admin", "admin123"} 
 		};
 		
 	}

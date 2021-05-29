@@ -10,9 +10,9 @@ import org.testng.ITestContext;
 
 import com.slt.utils.ExcelUtils;
 
-public class MethodInterceptor implements IMethodInterceptor 
-{
-
+public class MethodInterceptor 
+{	//MethodInterceptor implements IMethodInterceptor 
+/*
 	@Override
 	public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) 
 	{
@@ -39,5 +39,5 @@ public class MethodInterceptor implements IMethodInterceptor
 		
 		return result;
 	}
-
+*/
 }
