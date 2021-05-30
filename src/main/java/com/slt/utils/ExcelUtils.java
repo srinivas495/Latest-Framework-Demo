@@ -16,10 +16,10 @@ import com.slt.constants.FrameworkConstants;
 
 public final class ExcelUtils {
 
-/*	
+	
 	private ExcelUtils() {}
 
-	public static List<Map<String,String>> getTestDetails(){
+	public static List<Map<String,String>> getTestDetails(String sheetname){
 
 		List<Map<String, String>> list = null;
 
@@ -28,10 +28,7 @@ public final class ExcelUtils {
 			
 			fs = new FileInputStream(FrameworkConstants.getExcelPath());
 			XSSFWorkbook workbook = new XSSFWorkbook(fs);
-			String sheetname = "RUNMANAGER";
 			XSSFSheet sheet = workbook.getSheet(sheetname);
-
-
 
 			int lastrownum = sheet.getLastRowNum();
 			int lastcolnum = sheet.getRow(0).getLastCellNum();
@@ -74,5 +71,5 @@ public final class ExcelUtils {
 
 	}
 	
-*/	
+
 }

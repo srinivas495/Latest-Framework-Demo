@@ -16,10 +16,6 @@ public final class FrameworkConstants {
 	private static final String EXCELPATH = RESOURCERPATH+"/excel/testdata.xlsx";
 	
 	private static String extentReportFilePath = "";
-	
-	
-	
-
 	public static String getExcelPath() {
 		return EXCELPATH;
 	}

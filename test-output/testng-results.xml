@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16168" started-at="2021-05-29T15:18:14Z" finished-at="2021-05-29T15:18:30Z">
+  <suite name="Suite" duration-ms="15658" started-at="2021-05-30T10:15:07Z" finished-at="2021-05-30T10:15:23Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16168" started-at="2021-05-29T15:18:14Z" finished-at="2021-05-29T15:18:30Z">
+    <test name="Test" duration-ms="15658" started-at="2021-05-30T10:15:07Z" finished-at="2021-05-30T10:15:23Z">
       <class name="com.slt.tests.OrangeHRMTests">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="setUP" is-config="true" duration-ms="7154" started-at="2021-05-29T15:18:14Z" finished-at="2021-05-29T15:18:21Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="setUP" is-config="true" duration-ms="7027" started-at="2021-05-30T10:15:07Z" finished-at="2021-05-30T10:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="setUP" is-config="true" duration-ms="7606" started-at="2021-05-29T15:18:14Z" finished-at="2021-05-29T15:18:21Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="setUP" is-config="true" duration-ms="6656" started-at="2021-05-30T10:15:07Z" finished-at="2021-05-30T10:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="loginLogoutTests(java.lang.String, java.lang.String)[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="loginLogoutTests" duration-ms="8235" started-at="2021-05-29T15:18:21Z" data-provider="LoginTestDataProvider" finished-at="2021-05-29T15:18:29Z">
+        <test-method status="PASS" signature="loginLogoutTests(java.lang.String, java.lang.String)[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="loginLogoutTests" duration-ms="8214" started-at="2021-05-30T10:15:14Z" data-provider="LoginTestDataProvider" finished-at="2021-05-30T10:15:22Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTests -->
-        <test-method status="PASS" signature="loginLogoutTests(java.lang.String, java.lang.String)[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="loginLogoutTests" duration-ms="7847" started-at="2021-05-29T15:18:21Z" data-provider="LoginTestDataProvider" finished-at="2021-05-29T15:18:29Z">
+        <test-method status="PASS" signature="loginLogoutTests(java.lang.String, java.lang.String)[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="loginLogoutTests" duration-ms="7842" started-at="2021-05-30T10:15:14Z" data-provider="LoginTestDataProvider" finished-at="2021-05-30T10:15:22Z">
           <params>
             <param index="0">
               <value>
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTests -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="tearDown" is-config="true" duration-ms="752" started-at="2021-05-29T15:18:29Z" finished-at="2021-05-29T15:18:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="tearDown" is-config="true" duration-ms="760" started-at="2021-05-30T10:15:22Z" finished-at="2021-05-30T10:15:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="tearDown" is-config="true" duration-ms="673" started-at="2021-05-29T15:18:29Z" finished-at="2021-05-29T15:18:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.slt.tests.OrangeHRMTests@13805618]" name="tearDown" is-config="true" duration-ms="753" started-at="2021-05-30T10:15:22Z" finished-at="2021-05-30T10:15:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

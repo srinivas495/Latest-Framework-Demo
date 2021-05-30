@@ -12,7 +12,6 @@ import com.slt.reports.ExtentLogger;
 import com.slt.reports.ExtentReport;
 
 public class ListenerClass implements ITestListener, ISuiteListener {
-
 	@Override
 	public void onStart(ISuite suite) {
 		try {
@@ -21,7 +20,6 @@ public class ListenerClass implements ITestListener, ISuiteListener {
 			e.printStackTrace();
 		}
 	}
-
 	@Override
 	public void onFinish(ISuite suite) {
 		try {
@@ -29,21 +27,17 @@ public class ListenerClass implements ITestListener, ISuiteListener {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	
 	}
-
 	@Override
 	public void onTestStart(ITestResult result) {
 
 		ExtentReport.createTest(result.getMethod().getMethodName());
 	}
-
 	@Override
 	public void onTestSuccess(ITestResult result) {
 
 		ExtentLogger.pass(result.getMethod().getMethodName() + "is passed");
 	}
-
 	@Override
 	public void onTestFailure(ITestResult result) {
 
